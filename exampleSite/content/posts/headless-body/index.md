@@ -2,7 +2,7 @@
 title: "Headless Body"
 headline: "Headless Body in Topless Bar"
 subhead: "The greatest headline in New York newspaper history"
-featured_anchor: bottom
+featured_anchor: top
 weight: 1
 date: 2018-02-25T16:24:37+01:00
 ---

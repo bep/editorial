@@ -5,7 +5,7 @@
 	<div class="posts">
 		{{ range . }}
 		<article>
-			<a href="#" class="image">{{ partial "featured-image-srcset" (dict "page" . "width" 600 "height" 300 ) }}</a>
+			<a href="{{ .RelPermalink }}" class="image">{{ partial "featured-image-srcset" (dict "page" . "width" 600 "height" 300 ) }}</a>
 			<h3>{{ with .Params.headline }}{{ . | markdownify }}{{ end }}</h3>
 			<p>{{ .Summary }}</p>
 			<ul class="actions">

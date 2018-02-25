@@ -2,6 +2,7 @@
 title: "Titanic Sinks"
 headline: "Titanic Sinks Four Hours After Hitting Iceberg"
 subhead:
+weight: 2
 date: 2018-02-25T16:43:46+01:00
 ---
 
