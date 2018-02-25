@@ -3,18 +3,12 @@
 		<h2>Ante interdum</h2>
 	</header>
 	<div class="mini-posts">
+		{{ range . }}
 		<article>
-			<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+			<a href="{{ .RelPermalink }}" class="image">{{ partial "featured-image-srcset" (dict "page" . "width" 300 "height" 150 ) }}</a>
+			<p>{{ .Summary | truncate 70 }}</p>
 		</article>
-		<article>
-			<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-		</article>
-		<article>
-			<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-		</article>
+		{{ end }}
 	</div>
 	<ul class="actions">
 		<li><a href="#" class="button">More</a></li>

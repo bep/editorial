@@ -1,5 +1,9 @@
 {{ define "main" }}
-{{ partial "sections/banner" (.Site.RegularPages | first 1) }}
-{{ partial "sections/diamond" (.Site.RegularPages | first 4) }}
-{{ partial "sections/articles" (.Site.RegularPages | first 8) }}
+	{{ with .Site.RegularPages }}
+		{{ if ge (len .) 1 }}
+			{{ partial "sections/banner" (index . 0) }}
+			{{ partial "sections/diamond" (. | first 4) }}
+			{{ partial "sections/articles" (. | first 4) }}
+		{{ end }}
+	{{ end }}
 {{ end }}

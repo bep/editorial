@@ -1,0 +1,12 @@
+{{ define "main" }}
+<section>
+	<header class="main">
+		<h1>{{ with .Params.headline }}{{ . | markdownify }}{{ end }}</h1>
+		<p>{{ with .Params.subhead }}{{ . | markdownify }}{{ end }}</p>
+	</header>
+	<span class="image main">
+		{{ partial "featured-image-srcset" (dict "page" . "width" 1200 "height" 300 ) }}	
+	</span>
+	{{ .Content }}
+</section>
+{{ end }}
