@@ -1,0 +1,16 @@
+name = "Editorial"
+license = "CC BY 3.0"
+licenselink = "https://github.com/bep/editorial/blob/master/LICENSE"
+description = "Responsive editorial theme for Hugo."
+homepage = "https://github.com/bep/editorial"
+tags = ["Responsive", "Multilingual"]
+features = ["Responsive", "Multilingual"]
+min_version = "0.36.1"
+
+[author]
+  name = "Bjørn Erik Pedersen"
+  homepage = "http://bep.is"
+
+[original]
+  name = "Editorial by HTML5 UP"
+  homepage = "https://html5up.net/editorial"
