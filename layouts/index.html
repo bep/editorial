@@ -1,0 +1,5 @@
+{{ define "main" }}
+{{ partial "sections/banner" (.Site.RegularPages | first 1) }}
+{{ partial "sections/diamond" (.Site.RegularPages | first 4) }}
+{{ partial "sections/articles" (.Site.RegularPages | first 8) }}
+{{ end }}
